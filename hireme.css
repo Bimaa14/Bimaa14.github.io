@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d; /* Warna latar */
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+    overflow: hidden;
+    position: relative; /* Untuk penyesuaian posisi */
+    top: -2rem; /* Geser konten sedikit ke atas */
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem; /* Ukuran lebih kecil */
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.4rem; /* Ukuran lebih kecil */
+    color: #cccccc;
+    margin-bottom: 1.5rem; /* Mengurangi jarak antar teks */
+    line-height: 1.4;
+}
+
+/* Tombol kembali */
+a.back-btn {
+    display: inline-block;
+    padding: 0.8rem 2.4rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.4rem;
+    color: #007bff;
+    font-weight: 500;
+    border: 2px solid #007bff;
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin-top: 2rem; /* Jarak dengan ikon */
+}
+
+a.back-btn:hover {
+    transform: scale(1.03);
+    background-color: #007bff;
+    color: black;
+    box-shadow: 0 0 20px #007bff;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 1rem; /* Jarak lebih kecil dari teks ke ikon */
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border: 0.2rem solid #007bff;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    margin: 0 0.8rem;
+    transition: 0.3s ease;
+    color: #007bff;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.2) translateY(-5px);
+    background-color: #007bff;
+    box-shadow: 0 0 15px #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .social-icons a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.4rem;
+    }
+}
